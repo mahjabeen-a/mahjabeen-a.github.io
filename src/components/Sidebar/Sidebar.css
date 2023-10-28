@@ -12,6 +12,7 @@
     justify-content: space-between;
     z-index: 10;
     transition: 0.3s;
+    align-items: center;
 }
 
 .nav__list {
@@ -25,10 +26,17 @@
     color: var(--title-color);
     font-weight: var(--font-bold);
     transition: .3s;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav__link:hover {
     color: hsl(43, 100%, 68%);
+}
+
+.nav__title {
+    font-size: var(--small-font-size);
 }
 
 .copyright {
