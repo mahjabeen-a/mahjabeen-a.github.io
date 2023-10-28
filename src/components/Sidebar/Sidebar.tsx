@@ -1,6 +1,7 @@
 import "./Sidebar.css";
 import Logo from "../../assets/logo.svg"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
@@ -10,43 +11,43 @@ const Sidebar = () => {
     return (
         <>
         <aside className={toggle ? "aside show-menu" : "aside"}>
-            <a href="#home" className="nav__logo">
+            <Link to="/" className="nav__logo">
                 <img src={Logo} alt="" />
-            </a>
+            </Link>
 
             <nav className="nav">
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <Link to="/" className="nav__link">
                                 <i className="icon-home"></i>
                                 <p className="nav__title">HOME</p>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#about" className="nav__link">
+                            <a href="/#about" className="nav__link">
                                 <i className="icon-user-following"></i>
                                 <p className="nav__title">ABOUT</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#services" className="nav__link">
+                            <a href="/#services" className="nav__link">
                                 <i className="icon-briefcase"></i>
                                 <p className="nav__title">SERVICES</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#blog" className="nav__link">
+                            <a href="/#blog" className="nav__link">
                                 <i className="icon-note"></i>
                                 <p className="nav__title">BLOGS</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#contact" className="nav__link">
+                            <a href="/#contact" className="nav__link">
                                 <i className="icon-bubble"></i>
                                 <p className="nav__title">CONTACT</p>
                             </a>
