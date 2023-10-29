@@ -1,7 +1,9 @@
+import ErrorScreen from "../components/ErrorScreen/ErrorScreen";
+
 const ErrorPage = () => {
     return (
         <main className="main">
-            <div>404 Page Not Found</div>
+            <ErrorScreen />
         </main>
     );
 }
