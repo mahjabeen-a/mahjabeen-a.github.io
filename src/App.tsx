@@ -1,24 +1,21 @@
 import "./App.css";
-import About from "./components/About/About";
-import Blog from "./components/Blog/Blog";
-import Contact from "./components/Contact/Contact";
-import Home from "./components/Home/Home";
-import Services from "./components/Services/Services";
 import Sidebar from "./components/Sidebar/Sidebar";
+import BlogContentPage from "./pages/BlogContentPage";
+import BlogPage from "./pages/BlogPage";
+import ErrorPage from "./pages/ErrorPage";
+import HomePage from "./pages/HomePage";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Sidebar />
-      <main className="main">
-        <Home />
-        <About />
-        <Services />
-        <Blog />
-        {/* <Services />
-        <Testimonials /> */}
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage />} ></Route>
+        <Route path="/blogs" element={<BlogPage />} ></Route>
+        <Route path="/content" element={<BlogContentPage />} ></Route>
+        <Route path="*" element={<ErrorPage />} ></Route>
+      </Routes>
     </>
   );
 }
