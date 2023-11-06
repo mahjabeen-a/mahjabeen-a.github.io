@@ -12,43 +12,43 @@ const Sidebar = () => {
         <>
         <aside className={toggle ? "aside show-menu" : "aside"}>
             <Link to="/" className="nav__logo">
-                <img src={Logo} alt="" />
+                <img width="100px" src={Logo} alt="" />
             </Link>
 
             <nav className="nav">
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/" className="nav__link">
-                                <i className="icon-home"></i>
+                            <Link to="/#home" className="nav__link">
+                                <i className="fa-solid fa-house"></i>
                                 <p className="nav__title">HOME</p>
                             </Link>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#about" className="nav__link">
-                                <i className="icon-user-following"></i>
+                                <i className="fa-solid fa-address-card"></i>
                                 <p className="nav__title">ABOUT</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#services" className="nav__link">
-                                <i className="icon-briefcase"></i>
+                                <i className="fa-solid fa-suitcase"></i>
                                 <p className="nav__title">SERVICES</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#blog" className="nav__link">
-                                <i className="icon-note"></i>
+                                <i className="fa-solid fa-file-pen"></i>
                                 <p className="nav__title">BLOGS</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#contact" className="nav__link">
-                                <i className="icon-bubble"></i>
+                                <i className="fa-solid fa-address-book"></i>
                                 <p className="nav__title">CONTACT</p>
                             </a>
                         </li>

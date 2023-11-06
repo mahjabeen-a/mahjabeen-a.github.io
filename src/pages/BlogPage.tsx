@@ -1,7 +1,7 @@
 import BlogPageGrid from "../components/Blog/BlogPageGrid";
 import Searchbar from "../components/Searchbar/Searchbar";
 import { useEffect, useState } from "react";
-import blogCardData from "../components/Blog/BlogData";
+import { allBlogsData } from "../data/BlogData";
 
 const BlogPage = () => {
   useEffect(() => {
@@ -19,10 +19,10 @@ const BlogPage = () => {
         author: string;
         url: string;
       }[]
-    >(blogCardData);
+    >(allBlogsData);
 
   const handleSearch = (term: string) => {
-    const filteredResults = blogCardData.filter((results) =>
+    const filteredResults = allBlogsData.filter((results) =>
       results.title.toLowerCase().includes(term.toLowerCase())
     );
     setResults(filteredResults);

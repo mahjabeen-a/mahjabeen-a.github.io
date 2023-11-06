@@ -9,21 +9,21 @@ const data = [
         image: Image1,
         title: "UI/UX Design",
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Elevate user experiences with intuitive interfaces and visually stunning designs",
     },
     {
         id: 2,
         image: Image2,
         title: "Android Development",
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Transform your ideas into powerful, user-friendly Android apps.",
     },
     {
         id: 3,
         image: Image3,
         title: "Illustration",  
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Add a touch of creativity and storytelling to your brand with custom illustrations.",
     },
 ];
 

@@ -1,5 +1,5 @@
 import "./Home.css";
-import Me from "../../assets/avatar-1.svg"
+import Me from "../../assets/akash-avatar-1.svg"
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 
@@ -9,7 +9,7 @@ const Home = () => {
             <div className="intro">
                 <img src={Me} alt="" className="home__img" />
                 <h1 className="home__name">Akash Murugesh K</h1>
-                <span className="home__education">I'm a Front-End developer</span>
+                <span className="home__education">I'm a Front-End developer @ Walmart</span>
 
                 <HeaderSocials />
 
