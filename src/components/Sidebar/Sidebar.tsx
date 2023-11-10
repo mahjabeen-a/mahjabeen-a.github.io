@@ -2,6 +2,9 @@ import "./Sidebar.css";
 import Logo from "../../assets/logo.svg"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaAddressCard, FaSuitcase, } from "react-icons/fa";
+import { FaHouse, FaFilePen, FaAddressBook } from "react-icons/fa6";
+
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
@@ -19,36 +22,36 @@ const Sidebar = () => {
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/#home" className="nav__link">
-                                <i className="fa-solid fa-house"></i>
+                            <a href="/#home" className="nav__link">
+                                <FaHouse />
                                 <p className="nav__title">HOME</p>
-                            </Link>
+                            </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#about" className="nav__link">
-                                <i className="fa-solid fa-address-card"></i>
+                                <FaAddressCard />
                                 <p className="nav__title">ABOUT</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#services" className="nav__link">
-                                <i className="fa-solid fa-suitcase"></i>
+                                <FaSuitcase />
                                 <p className="nav__title">SERVICES</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#blog" className="nav__link">
-                                <i className="fa-solid fa-file-pen"></i>
+                                <FaFilePen />
                                 <p className="nav__title">BLOGS</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#contact" className="nav__link">
-                                <i className="fa-solid fa-address-book"></i>
+                                <FaAddressBook />
                                 <p className="nav__title">CONTACT</p>
                             </a>
                         </li>
