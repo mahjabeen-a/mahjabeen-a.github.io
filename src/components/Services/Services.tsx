@@ -1,7 +1,7 @@
 import "./Services.css";
-import Image1 from "../../assets/service-1.svg"
-import Image2 from "../../assets/service-2.svg"
-import Image3 from "../../assets/service-3.svg"
+import Image1 from "../../assets/image/services-1.png"
+import Image2 from "../../assets/image/services-2.png"
+import Image3 from "../../assets/image/services-3.png"
 
 const data = [
     {
@@ -9,21 +9,21 @@ const data = [
         image: Image1,
         title: "UI/UX Design",
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Elevate user experiences with intuitive interfaces and visually stunning designs",
     },
     {
         id: 2,
         image: Image2,
         title: "Android Development",
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Transform your ideas into powerful, user-friendly Android apps.",
     },
     {
         id: 3,
         image: Image3,
         title: "Illustration",  
         description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commondo lingula eget.",
+        "Add a touch of creativity and storytelling to your brand with custom illustrations.",
     },
 ];
 
@@ -36,7 +36,7 @@ const Services = () => {
                 {data.map(({id, image, title, description}) => {
                     return (
                         <div className="services__card" key={id}>
-                            <img src={image} alt="" className="services__img" />
+                            <img src={image} width="100px" alt="" className="services__img" />
 
                             <h3 className="services__title">{title}</h3>
                             <p className="services__description">{description}</p>

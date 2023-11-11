@@ -1,8 +1,10 @@
+import { BiSolidCoffee, BiSolidPalette, BiSolidCalendarCheck, BiSolidMeteor } from "react-icons/bi"
+
 const AboutBox = () => {
     return (
         <div className="about__boxes grid">
             <div className="about__box">
-                <i className="about__icon icon-fire"></i>
+                <BiSolidCalendarCheck className="about__icon"/>
 
                 <div>
                     <h3 className="about__title">9</h3>
@@ -11,7 +13,7 @@ const AboutBox = () => {
             </div>
 
             <div className="about__box">
-                <i className="about__icon icon-cursor"></i>
+                <BiSolidMeteor className="about__icon"/>
 
                 <div>
                     <h3 className="about__title">0</h3>
@@ -20,7 +22,7 @@ const AboutBox = () => {
             </div>
 
             <div className="about__box">
-                <i className="about__icon icon-pencil"></i>
+                <BiSolidPalette className="about__icon"/>
 
                 <div>
                     <h3 className="about__title">144</h3>
@@ -29,7 +31,7 @@ const AboutBox = () => {
             </div>
 
             <div className="about__box">
-                <i className="about__icon icon-cup"></i>
+                <BiSolidCoffee className="about__icon"/>
 
                 <div>
                     <h3 className="about__title">5616</h3>

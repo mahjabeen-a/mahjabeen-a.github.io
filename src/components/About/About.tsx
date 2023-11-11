@@ -1,5 +1,5 @@
 import "./About.css";
-import Image from "../../assets/avatar-2.svg";
+import Image from "../../assets/akash-avatar-2.svg";
 import AboutBox from "./AboutBox";
 
 const About = () => {
@@ -12,8 +12,14 @@ const About = () => {
 
                 <div className="about__data grid">
                     <div className="about__info">
-                        <p className="about__description">I am Akash Murugesh, Android developer and UI/UX designer from India. This website is under development. Actual Content will be provided later.</p>
-                        {/* a href="" className="btn"></a> */}
+                        <p className="about__description">
+                        Hello there! I'm <b>Akash Murugesh</b>, a passionate Android app developer, 
+                        UI/UX designer, and illustrator. Here, you'll find a showcase of my 
+                        creative journey, from crafting engaging mobile experiences to bringing 
+                        design concepts to life. <br/><br/> So, whether you're a fellow developer, a 
+                        design enthusiast, or just curious about what I do, join me on this 
+                        exciting ride.
+                        </p>
                     </div>
 
                     <div className="about__skills grid">

@@ -2,6 +2,11 @@ import "./Sidebar.css";
 import Logo from "../../assets/logo.svg"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaAddressCard, FaSuitcase, } from "react-icons/fa";
+import { FaHouse, FaFilePen, FaAddressBook } from "react-icons/fa6";
+import { FiMenu } from "react-icons/fi";
+import { GrClose } from "react-icons/gr"
+
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
@@ -12,43 +17,43 @@ const Sidebar = () => {
         <>
         <aside className={toggle ? "aside show-menu" : "aside"}>
             <Link to="/" className="nav__logo">
-                <img src={Logo} alt="" />
+                <img width="100px" src={Logo} alt="" />
             </Link>
 
             <nav className="nav">
                 <div className="nav__menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/" className="nav__link">
-                                <i className="icon-home"></i>
+                            <a href="/#home" className="nav__link">
+                                <FaHouse />
                                 <p className="nav__title">HOME</p>
-                            </Link>
+                            </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#about" className="nav__link">
-                                <i className="icon-user-following"></i>
+                                <FaAddressCard />
                                 <p className="nav__title">ABOUT</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#services" className="nav__link">
-                                <i className="icon-briefcase"></i>
+                                <FaSuitcase />
                                 <p className="nav__title">SERVICES</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#blog" className="nav__link">
-                                <i className="icon-note"></i>
+                                <FaFilePen />
                                 <p className="nav__title">BLOGS</p>
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="/#contact" className="nav__link">
-                                <i className="icon-bubble"></i>
+                                <FaAddressBook />
                                 <p className="nav__title">CONTACT</p>
                             </a>
                         </li>
@@ -62,7 +67,7 @@ const Sidebar = () => {
         </aside>
 
         <div className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"} onClick={() => showMenu(!toggle)}>
-            <i className="icon-menu"></i>
+            {toggle? <GrClose size="1.25rem"/> : <FiMenu size="1.5rem"/> }
         </div>
         </>
     );

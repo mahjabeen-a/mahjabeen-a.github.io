@@ -47,6 +47,7 @@
 
 .contact__form-area textarea{
     resize: none;
+    padding-top: 1.25rem;
 }
 
 @media screen and (max-width: 1024px) {
