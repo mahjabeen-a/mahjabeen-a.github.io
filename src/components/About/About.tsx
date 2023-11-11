@@ -1,5 +1,5 @@
 import "./About.css";
-import Image from "../../assets/test-avatar-2.svg";
+import Image from "../../assets/akash-avatar-2.svg";
 import AboutBox from "./AboutBox";
 
 const About = () => {

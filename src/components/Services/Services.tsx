@@ -1,7 +1,7 @@
 import "./Services.css";
-import Image1 from "../../assets/image/web-design.png"
-import Image2 from "../../assets/image/app-development.png"
-import Image3 from "../../assets/image/graphic-designer.png"
+import Image1 from "../../assets/image/services-1.png"
+import Image2 from "../../assets/image/services-2.png"
+import Image3 from "../../assets/image/services-3.png"
 
 const data = [
     {
