@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAddressCard, FaSuitcase, } from "react-icons/fa";
 import { FaHouse, FaFilePen, FaAddressBook } from "react-icons/fa6";
+import { FiMenu } from "react-icons/fi";
+import { GrClose } from "react-icons/gr"
 
 
 const Sidebar = () => {
@@ -65,7 +67,7 @@ const Sidebar = () => {
         </aside>
 
         <div className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"} onClick={() => showMenu(!toggle)}>
-            <i className="icon-menu"></i>
+            {toggle? <GrClose size="1.25rem"/> : <FiMenu size="1.5rem"/> }
         </div>
         </>
     );
